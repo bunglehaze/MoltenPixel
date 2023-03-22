@@ -1,1 +1,283 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family:"Righteous";
+  src:url("./assets/fonts/Righteous-Regular.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+}
+html {
+  font-size: 16px;
+  height: 100%
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* padding:0 0 100px; */
+  background-color:#03131a;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Righteous',Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1.5rem 0 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  -webkit-text-stroke: 0.5px black;
+}
+h1:first-child,h2:first-child,h3:first-child,h4:first-child,h5:first-child,h6:first-child {
+  margin-top: 0
+}
+
+h1 {
+  font-size: 3rem
+}
+
+h2 {
+  font-size: 2.5rem
+}
+
+h3 {
+  font-size: 2rem
+}
+
+h4 {
+  font-size: 1.75rem
+}
+
+h5 {
+  font-size: 1.5rem
+}
+
+h6 {
+  font-size: 1.25rem
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 1rem
+}
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+.header {
+  height:100%;
+  max-height:221px;
+  margin:10px 0 20px;
+}
+.logo {
+  max-height:221px;
+  width:100%;
+  max-width:1980px;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 0 10px 0 10px;
+}
+.footer {
+  /* position:absolute;
+  bottom:0.5rem;
+  right:0.5rem; */
+  height:60px;
+  margin-top:10px;
+}
+.socials {
+  width:200px;
+}
+.speeddial {
+  position:fixed;
+  top:3rem;
+  right:6rem;
+}
+.p-speeddial-button.p-button.p-button-icon-only {
+  width: 4rem;
+  height: 4rem;
+}
+.star-box {
+  width:100%;
+  max-width:2560px;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+.star-inner {
+  position:relative;
+  width: 100%;
+  max-width: 420px;
+  height:100%;
+  margin:15px;
+}
+.star-inner-lg {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  margin:50px;
+}
+
+.project-name {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.button {
+  background-color: #dcc25c;
+  border: 0 solid #88ff00;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: .1rem 0.65rem;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  color:inherit;
+  -webkit-text-stroke: 0.5px black;
+  max-width: 550px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-8deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  border: 2px solid #b3ff00;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+}
+
+.button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media screen and (max-width: 992px)  {
+  .speeddial {
+    position:fixed;
+    top:1.25rem;
+    right:3rem;
+  }
+  .p-speeddial-button.p-button.p-button-icon-only {
+    width: 3rem;
+    height: 3rem;
+  }
+  h1 {
+    font-size: 2rem
+  }
+  /* .socials {
+    margin-left:50%;
+    margin-right:50%;
+    margin-top:5px;
+    margin-bottom:50px;
+  } */
+  .header {
+    height:100%;
+    max-height:80px;
+  }
+  .star-box {
+    width:100%;
+    max-width:950px;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .footer {
+    height:100px;
+    margin-top:10px;
+  }
+}
+@media screen and (max-width: 768px)  {
+  .speeddial {
+    position:fixed;
+    top:1.25rem;
+    right:3rem;
+  }
+  .p-speeddial-button.p-button.p-button-icon-only {
+    width: 3rem;
+    height: 3rem;
+  }
+  h1 {
+    font-size: 1.75rem
+  }
+  .socials {
+    margin-left:50%;
+    margin-right:50%;
+  }
+  .header {
+    height:100%;
+    max-height:80px;
+  }
+  .star-box {
+    width:100%;
+    max-width:700px;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .star-inner {
+    position:relative;
+    width: 100%;
+    max-width: 220px;
+    height:100%;
+    margin:5px;
+  }
+  .star-inner-lg {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    margin:0px;
+  }
+  .footer {
+    height:100px;
+    margin-top:10px;
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  .speeddial {
+    position:fixed;
+    top:1rem;
+    right:2rem;
+  }
+  .p-speeddial-button.p-button.p-button-icon-only {
+    width: 2rem;
+    height: 2rem;
+  }
+  h1 {
+    font-size: 1.5rem
+  }
+  /* .socials {
+    margin-left:50%;
+    margin-right:50%;
+    float: right;
+    margin-top:5px;
+    margin-bottom:0;
+  } */
+  .header {
+    height:100%;
+    max-height:80px;
+  }
+  .footer {
+    height:300px;
+    margin-top:10px;
+  }
+}
+

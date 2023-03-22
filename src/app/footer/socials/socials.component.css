@@ -1,0 +1,48 @@
+.wrapper__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+.social-link--linkedin {
+  color: #2d76b0;
+}
+.social-link--github {
+  color: #000;
+}
+.social-link--instagram {
+  color: #9a2970;
+}
+.social-link .social-svg {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.social-link .social-svg .social-group__icon {
+  fill: #12de1d;
+  transition: all 0.2s;
+}
+.social-link .social-svg .social-group__inner-circle {
+  fill: transparent;
+  transition: all 0.2s;
+}
+.social-link .social-svg .social-group__outline {
+  stroke: #ff00c8;
+  transform-origin: 50% 50%;
+  transition: all 0.2s;
+}
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+  fill: #fffbfa;
+  transition: all 0.45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+  fill: currentColor;
+  transition: all 0.45s;
+}
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+  fill: url(#simpleInsta) !important;
+}
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+  stroke: currentColor;
+  transform: scale(1.1);
+  transition: all 0.45s;
+}
